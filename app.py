@@ -161,5 +161,5 @@ csv = df_log.to_csv(index=False).encode("utf-8")
 st.download_button("Download Full Flight Log (CSV)", csv, "flight_log.csv", "text/csv")
 
 # Auto-refresh
-time.sleep(1)
-st.experimental_rerun()
+time.sleep(5)
+st.rerun()
